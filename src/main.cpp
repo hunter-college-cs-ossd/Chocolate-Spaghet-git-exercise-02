@@ -45,7 +45,7 @@ typedef ostream& (*output_function) (const ostream & out);
 ******************************************************************************/
 
 
-
+ostream& gutierrezjdr_oddity(ostream &out);
 
 
 
@@ -55,6 +55,15 @@ int main(int argc, char* argv[] )
     // Calls to output functions
 
 
-
+	gutierrezjdr_oddity(cout);
     return 0;
 }
+
+
+
+ostream&gutierrezjdr_oddity (ostream & out)
+{
+	out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
+	
+	return out;
+} 
