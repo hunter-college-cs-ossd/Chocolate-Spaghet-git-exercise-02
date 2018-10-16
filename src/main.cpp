@@ -1,6 +1,6 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         : 
+  Author         :
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
@@ -11,16 +11,16 @@
   The number N below is the number of people on each team.
   This program prints N peculiar facts, called "oddities" here.
   The main program calls N functions, each with the syntax defined
-  by the output_function typedef defined below. Each function must be 
-  named 
+  by the output_function typedef defined below. Each function must be
+  named
        username_oddity
 
   where username is the GitHub username of its author.
-  For example, 
+  For example,
       output_function  stewartweiss_oddity;
 
   Oddities are found in the file "oddities.txt" in the project source directory
- 
+
 ******************************************************************************/
 
 #include <iostream>
@@ -35,26 +35,26 @@ using namespace std;
 /******************************************************************************/
 
 // The syntax of the output function that must be used to print an oddity.
-typedef ostream& (*output_function) (const ostream & out);
+typedef ostream& (*output_function) (ostream & out);
 
 
 /******************************************************************************
-        
+
                         All Function Definitions
 
 ******************************************************************************/
 
-
-
-
-
+ostream& johncgenere_oddity(ostream &out);
 
 int main(int argc, char* argv[] )
 {
-
     // Calls to output functions
-
-
+    johncgenere_oddity(cout);
 
     return 0;
+}
+
+ostream& johncgenere_oddity(ostream &out){
+    out << "Why do we drive on parkways and park on driveways?" << endl;
+    return out;
 }
