@@ -51,6 +51,7 @@ ostream& intro_oddity (ostream &out);
 // Declaration of oddity printing functions
 ostream& chocolate_spaghet_oddity (ostream &out);
 ostream& johncgenere_oddity(ostream &out);
+ostream& gutierrezjdr_oddity(ostream &out);
 
 int main(int argc, char* argv[] )
 {
@@ -60,6 +61,7 @@ int main(int argc, char* argv[] )
     // Calls to oddity functions
     chocolate_spaghet_oddity(cout);
     johncgenere_oddity(cout);
+    gutierrezjdr_oddity(cout);  
   
     return 0;
 }
@@ -78,3 +80,10 @@ ostream& johncgenere_oddity(ostream &out){
     out << "Why do we drive on parkways and park on driveways?" << endl;
     return out;
 }
+
+ostream&gutierrezjdr_oddity (ostream & out)
+{
+	out<<"Why do they put Braille dots on the keypad of the drive-up ATM?"<<endl;
+	
+	return out;
+} 
