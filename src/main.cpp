@@ -35,7 +35,7 @@ using namespace std;
 /******************************************************************************/
 
 // The syntax of the output function that must be used to print an oddity.
-typedef ostream& (*output_function) (const ostream & out);
+typedef ostream& (*output_function) (ostream & out);
 
 
 /******************************************************************************
@@ -45,7 +45,10 @@ typedef ostream& (*output_function) (const ostream & out);
 ******************************************************************************/
 
 
-
+ostream& f0cus10_oddity(ostream& out) {
+	out << "Do you need a silencer if you are going to shoot a mime?" << endl;
+	return out;
+}
 
 
 
@@ -53,7 +56,7 @@ int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
-
+    f0cus10_oddity(cout);
 
 
     return 0;
