@@ -52,17 +52,17 @@ ostream& intro_oddity (ostream &out);
 ostream& chocolate_spaghet_oddity (ostream &out);
 ostream& johncgenere_oddity(ostream &out);
 ostream& gutierrezjdr_oddity(ostream &out);
+ostream& f0cus10_oddity(ostream& out);
 
 int main(int argc, char* argv[] )
 {
-
     // Calls to intro functions
     intro_oddity(cout);
     // Calls to oddity functions
     chocolate_spaghet_oddity(cout);
     johncgenere_oddity(cout);
     gutierrezjdr_oddity(cout);  
-  
+    f0cus10_oddity(cout);
     return 0;
 }
 
@@ -87,3 +87,8 @@ ostream&gutierrezjdr_oddity (ostream & out)
 	
 	return out;
 } 
+
+ostream& f0cus10_oddity(ostream& out) {
+	out << "Do you need a silencer if you are going to shoot a mime?" << endl;
+	return out;
+}
